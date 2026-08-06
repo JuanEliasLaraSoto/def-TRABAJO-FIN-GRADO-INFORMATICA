@@ -1,0 +1,359 @@
+import numpy as np
+import pandas as pd
+from scipy.interpolate import CubicSpline, splev, splprep
+
+def limpiar_telemetria(tel):
+    # mínimo: asegurar que hay velocidad
+    if "Speed" in tel.columns:
+        tel = tel.dropna(subset=["Speed"]).copy()
+        tel = tel[tel["Speed"] >= 0].copy()
+    return tel
+
+def extraer_telemetria(session, year, gp, session_type, drivers=None, max_laps_per_driver=3):
+    """
+    Extrae la telemetría de las mejores vueltas de la sesión.
+
+    Si `drivers` es None, se procesan las mejores vueltas de todos los
+    pilotos. Si `drivers` es un string o una lista de strings, se restringe
+    la extracción a esos pilotos (p. ej. drivers="HAM" o drivers=["HAM", "VER"]).
+    """
+    laps = session.laps.pick_quicklaps()
+
+    if drivers is not None:
+        if isinstance(drivers, str):
+            drivers = [drivers]
+        laps = laps[laps["Driver"].isin(drivers)]
+        if laps.empty:
+            print(f"⚠️ Alerta: ninguno de los pilotos {drivers} tiene vueltas válidas en {year} {gp} ({session_type}).")
+            return pd.DataFrame()
+
+    rows = []
+    lap_id = 1
+    for drv in laps["Driver"].unique():
+        best = laps[laps["Driver"] == drv].sort_values("LapTime").head(max_laps_per_driver)
+        for _, lap in best.iterrows():
+            try:
+                tel = lap.get_telemetry()
+
+                if tel.empty:
+                    continue
+
+                #Evita errores si alguna columna no existe.
+                keep = [c for c in ["Time","Distance","X","Y","Speed","Throttle","Brake","RPM","nGear","DRS"] if c in tel.columns]
+                tel = tel[keep].copy()
+                tel["LapID"] = lap_id
+                tel["PointIndex"] = range(len(tel))
+                tel["Year"] = year
+                tel["GrandPrix"] = gp
+                tel["Session"] = session_type
+                tel["Driver"] = drv
+                tel["LapNumber"] = lap["LapNumber"]
+                tel["LapTime_s"] = lap["LapTime"].total_seconds()
+                tel["Time_s"] = tel["Time"].dt.total_seconds()
+                lap_id += 1
+                rows.append(tel)
+            except Exception as e:
+                print(f"⚠️ Error al extraer telemetría en la vuelta {lap['LapNumber']} de {drv}: {e}")
+                continue
+
+    return pd.concat(rows, ignore_index=True) if rows else pd.DataFrame()
+
+
+def interpolar_telemetria_temporal(
+    df_lap: pd.DataFrame, frecuencia_s: float = 0.1
+) -> pd.DataFrame:
+
+    """
+    Realiza una regularización temporal explícita (1D) vuelta por vuelta mediante
+
+    CubicSpline para sincronizar la telemetría a un paso constante.
+
+    :param df_lap: DataFrame con la telemetría de una única vuelta.
+    :param frecuencia_s: Paso temporal deseado en segundos (default 0.1s = 10Hz).
+    :return: DataFrame regularizado a frecuencia constante.
+    """
+
+    columnas_criticas = ["Time_s", "Speed", "LapID"]
+    if not all(col in df_lap.columns for col in columnas_criticas):
+        return df_lap
+
+    # 1. Ordenar y eliminar duplicados en Time_s (requisito estricto de CubicSpline)
+    df_vuelta = (
+        df_lap.sort_values("Time_s")
+        .drop_duplicates(subset=["Time_s"])
+        .copy()
+    )
+
+    # CubicSpline (bc_type='not-a-knot' por defecto) necesita al menos 4 puntos
+    if len(df_vuelta) < 4:
+        print(f"⚠️ Vuelta con solo {len(df_vuelta)} puntos válidos: no se puede interpolar, se devuelve sin regularizar.")
+        return df_lap
+
+    # 2. Generar la nueva cuadrícula temporal constante
+    tiempo_min = df_vuelta["Time_s"].min()
+    tiempo_max = df_vuelta["Time_s"].max()
+    tiempo_regular = np.arange(tiempo_min, tiempo_max, frecuencia_s)
+
+    if len(tiempo_regular) == 0:
+        print("⚠️ Rango temporal insuficiente para la frecuencia solicitada: se devuelve sin regularizar.")
+        return df_lap
+
+    df_interpolado = pd.DataFrame({"Time_s": tiempo_regular})
+    df_interpolado["LapID"] = df_vuelta["LapID"].iloc[0]
+
+    # 3. Interpolación 1D con CubicSpline para variables temporales monótonas
+    cs_speed = CubicSpline(
+        df_vuelta["Time_s"].values, df_vuelta["Speed"].values
+    )
+    df_interpolado["Speed"] = cs_speed(tiempo_regular)
+
+    if "Distance" in df_vuelta.columns:
+        cs_dist = CubicSpline(
+            df_vuelta["Time_s"].values, df_vuelta["Distance"].values
+        )
+        df_interpolado["Distance"] = cs_dist(tiempo_regular)
+
+    # Opcional: si existen canales de pedales los interpolamos igual
+    for canal in ["Throttle", "Brake"]:
+        if canal in df_vuelta.columns:
+            cs_canal = CubicSpline(
+                df_vuelta["Time_s"].values, df_vuelta[canal].values
+            )
+            df_interpolado[canal] = cs_canal(tiempo_regular)
+
+    return df_interpolado
+
+
+def interpolar_geometria_y_telemetria_circuito(
+    df_tel: pd.DataFrame,
+    smoothing: float = 80.0,
+    num_puntos: int = 1500,
+    per: bool = True,
+) -> tuple[pd.DataFrame, dict]:
+    """Reconstruye la geometría 2D del circuito mediante Splines Cúbicos Paramétricos (splprep/splev)
+
+    y mapea síncronamente los canales cinemáticos (Speed, Throttle, Brake) sobre
+    el eje de progreso u in [0, 1].
+    """
+    # Aseguramos que la telemetría esté ordenada espacialmente
+    df_tel = df_tel.sort_values(by="Distance").copy()
+
+    eje_x = df_tel["X"].values
+    eje_y = df_tel["Y"].values
+
+    # 1. Ajuste paramétrico de la curva plana 2D para la Pista (X(u), Y(u))
+    tck, u_original = splprep([eje_x, eje_y], s=float(smoothing), per=per, k=3)
+
+    # 2. Creación del nuevo dominio paramétrico homogéneo u en [0, 1]
+    u_new = np.linspace(0.0, 1.0, num_puntos)
+
+    # 3. Evaluación de las coordenadas geoespaciales y derivadas analíticas
+    x_curva, y_curva = splev(u_new, tck)
+    dx, dy = splev(u_new, tck, der=1)
+    ddx, ddy = splev(u_new, tck, der=2)
+
+    x_arr, y_arr = np.array(x_curva, dtype=float), np.array(
+        y_curva, dtype=float
+    )
+    dx_arr, dy_arr = np.array(dx, dtype=float), np.array(dy, dtype=float)
+    ddx_arr, ddy_arr = np.array(ddx, dtype=float), np.array(ddy, dtype=float)
+
+    # 4. Distancia acumulada sobre la pista suavizada
+    ds = np.hypot(np.diff(x_arr), np.diff(y_arr))
+    s_cum = np.r_[0.0, np.cumsum(ds)]
+
+    # 5. Cálculo analítico de la Curvatura kappa
+    denom = np.power(dx_arr**2 + dy_arr**2, 1.5)
+    denom = np.where(denom == 0, np.nan, denom)
+    curvature = np.abs(dx_arr * ddy_arr - dy_arr * ddx_arr) / denom
+
+
+
+    # 7. Consolidación de la matriz unificada
+    data_dict = {
+        "u": u_new,
+        "s": s_cum,
+        "X": x_arr,
+        "Y": y_arr,
+        "dx": dx_arr,
+        "dy": dy_arr,
+        "ddx": ddx_arr,
+        "ddy": ddy_arr,
+        "Curvature": curvature,
+        "ICC": curvature,  # Índice de Complejidad de Curva
+        "Radius_m": 1.0 / np.where(curvature == 0, np.nan, curvature),
+    }
+
+    # Unimos los canales cinemáticos interpolados
+
+    spline_track = pd.DataFrame(data_dict)
+
+    meta = {
+        "raw_points": int(len(df_tel)),
+        "spline_points": int(len(spline_track)),
+        "track_length_m": float(spline_track["s"].max()),
+    }
+
+    return spline_track, meta
+
+
+"""
+def extraer_tramos_lentos(
+    df_interpolado: pd.DataFrame,
+    year: int = 2023,
+    gp: str = "Italian Grand Prix",
+    session_type: str = "R",
+    threshold_percentile: float = 20.0,
+    min_segment_length_m: float = 15.0,
+    output_dir: str = "../csv_data",
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+
+    chicanes) sobre la telemetría regularizada e infiere el Índice de
+
+    Complejidad de Curva (ICC).
+
+    :param df_interpolado: DataFrame con la telemetría interpolada por splines.
+    :param year: Año del Gran Premio (metadato).
+    :param gp: Nombre del Gran Premio (metadato).
+    :param session_type: Tipo de sesión ('R', 'Q', etc.).
+    :param threshold_percentile: Percentil dinámico para fijar el umbral de
+        velocidad.
+    :param min_segment_length_m: Metraje mínimo para considerar una curva
+        válida.
+    :param output_dir: Directorio de persistencia.
+    :return: Tuple con (df_segments, df_track_curves).
+
+    print(f"📊 Iniciando análisis espacial y segmentación para {gp} ({year})...")
+
+    # 1. Copiar y ordenar estrictamente por distancia para blindar la geometría
+    df_track = df_interpolado.sort_values(by="Distance").copy()
+
+    # 2. Asignación defensiva de columnas de trazabilidad
+    if "Time_s" not in df_track.columns and "Time" in df_track.columns:
+        df_track["Time_s"] = df_track["Time"].dt.total_seconds()
+
+    if "LapID" not in df_track.columns:
+        df_track["LapID"] = 1
+
+    # 3. Cálculo del umbral dinámico de velocidad (evita el sesgo de fijar 100 km/h en circuitos rápidos)
+    umbral_velocidad = np.percentile(
+        df_track["Speed"].values, threshold_percentile
+    )
+    print(
+        f"🎯 Umbral dinámico calculado (Percentil {threshold_percentile:.0f}%): {umbral_velocidad:.2f} km/h"
+    )
+
+    # 4. Máscara booleana para identificar puntos lentos
+    is_slow = (df_track["Speed"].values < umbral_velocidad).astype(int)
+
+    # 5. Algoritmo de agrupación robusto por punteros e índices
+    slow_segments = []
+    n = len(is_slow)
+    i = 0
+
+    while i < n:
+        if is_slow[i] == 1:
+            start_idx = i
+            while i < n and is_slow[i] == 1:
+                i += 1
+            end_idx = i - 1
+
+            s_start = df_track["Distance"].iloc[start_idx]
+            s_end = df_track["Distance"].iloc[end_idx]
+            length_m = s_end - s_start
+
+            # Filtrar micro-frenadas o ruido irrelevante
+            if length_m >= min_segment_length_m:
+                segment_df = df_track.iloc[start_idx : end_idx + 1]
+                min_speed = segment_df["Speed"].min()
+                apex_dist = segment_df.loc[
+                    segment_df["Speed"] == min_speed, "Distance"
+                ].iloc[0]
+
+                slow_segments.append(
+                    {
+                        "Year": year,
+                        "GP": gp,
+                        "Session": session_type,
+                        "Segment_ID": len(slow_segments) + 1,
+                        "Start_Distance_m": s_start,
+                        "End_Distance_m": s_end,
+                        "Length_m": length_m,
+                        "Min_Speed_kmh": min_speed,
+                        "Apex_Distance_m": apex_dist,
+                    }
+                )
+        else:
+            i += 1
+
+    df_segments = pd.DataFrame(slow_segments)
+
+    # 6. Cálculo del Gradiente Cinemático (Δv / Δs) sobre la distancia
+    ds = np.gradient(df_track["Distance"].values)
+    ds = np.where(ds == 0, np.nan, ds)
+    dv = np.gradient(df_track["Speed"].values)
+
+    df_track["Gradiente_Cinematico"] = dv / ds
+
+    # 7. Inferencia del Índice de Complejidad de Curva (ICC)
+    # Si la telemetría interpolada incluye coordenadas geoespaciales (X, Y)
+    if "X" in df_track.columns and "Y" in df_track.columns:
+        x = df_track["X"].values
+        y = df_track["Y"].values
+
+        dx = np.gradient(x)
+        ddx = np.gradient(dx)
+        dy = np.gradient(y)
+        ddy = np.gradient(dy)
+
+        denom = np.power(dx**2 + dy**2, 1.5)
+        denom = np.where(denom == 0, np.nan, denom)
+
+        curvature = np.abs(dx * ddy - dy * ddx) / denom
+        df_track["Curvature"] = curvature
+        df_track["Radius_m"] = 1.0 / np.where(
+            curvature == 0, np.nan, curvature
+        )
+        df_track["ICC"] = curvature
+    else:
+        # Aproximación cinemática exógena basada en el gradiente de velocidad
+        df_track["ICC"] = np.abs(df_track["Gradiente_Cinematico"]) / (
+            df_track["Speed"] + 1e-5
+        )
+
+    # 8. Guardar los artefactos de salida en ../csv_data
+    if output_dir:
+        import os
+
+        os.makedirs(output_dir, exist_ok=True)
+
+        if not df_segments.empty:
+            df_segments.to_csv(
+                os.path.join(output_dir, "track_slow_segments.csv"),
+                index=False,
+            )
+
+        cols_export = [
+            col
+            for col in [
+                "LapID",
+                "Time_s",
+                "Distance",
+                "X",
+                "Y",
+                "Speed",
+                "Gradiente_Cinematico",
+                "ICC",
+            ]
+            if col in df_track.columns
+        ]
+        df_track[cols_export].to_csv(
+            os.path.join(output_dir, "track_curves_dificultad.csv"),
+            index=False,
+        )
+
+    print(
+        f"✅ Detección completada: {len(df_segments)} sectores lentos exportados a 'track_slow_segments.csv'."
+    )
+    return df_segments, df_track
+"""

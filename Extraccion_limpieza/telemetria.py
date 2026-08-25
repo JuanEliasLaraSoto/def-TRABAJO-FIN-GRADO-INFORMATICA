@@ -138,8 +138,12 @@ def interpolar_geometria_y_telemetria_circuito(
     # Aseguramos que la telemetría esté ordenada espacialmente
     df_tel = df_tel.sort_values(by="Distance").copy()
 
-    eje_x = df_tel["X"].values
-    eje_y = df_tel["Y"].values
+    # FastF1 expresa X/Y en decimetros (1/10 m), mientras que el resto del
+    # pipeline (p. ej. Distance, usada en estimar_longitud_circuito) trabaja
+    # en metros. Sin este reescalado, la longitud de arco, la curvatura y el
+    # radio resultantes quedan distorsionados por un factor de 10x.
+    eje_x = df_tel["X"].values / 10.0
+    eje_y = df_tel["Y"].values / 10.0
 
     # 1. Ajuste paramétrico de la curva plana 2D para la Pista (X(u), Y(u))
     tck, u_original = splprep([eje_x, eje_y], s=float(smoothing), per=per, k=3)

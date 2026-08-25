@@ -1,4 +1,3 @@
-import argparse
 import os
 
 import seaborn as sns
@@ -31,60 +30,53 @@ from estadisticas_meteorologicas import (
 from heatmaps import heatmap_ritmo_piloto_vuelta, heatmap_correlacion_telemetria
 
 
-def parse_args():
-    parser = argparse.ArgumentParser(
-        description="Análisis exploratorio de los datos de F1 extraídos y limpiados."
-    )
-    parser.add_argument("--data-dir", type=str, default="../csv_data", help="Directorio con los CSV de entrada")
-    parser.add_argument("--figures-dir", type=str, default="../figures", help="Directorio de salida para las figuras")
-    parser.add_argument("--tables-dir", type=str, default="../csv_data/eda", help="Directorio de salida para las tablas resumen")
-    return parser.parse_args()
+DATA_DIR = "../csv_data"
+FIGURES_DIR = "../figures/analisis_exploratorio"
+TABLES_DIR = "../eda/analisis_exploratorio"
 
-
-args = parse_args()
-os.makedirs(args.figures_dir, exist_ok=True)
-os.makedirs(args.tables_dir, exist_ok=True)
+os.makedirs(FIGURES_DIR, exist_ok=True)
+os.makedirs(TABLES_DIR, exist_ok=True)
 
 sns.set_theme(style="whitegrid")
 
 print("🔍 Iniciando análisis exploratorio...")
 
-laps, telemetry_3_mejores, telemetry_piloto, weather = cargar_datos_eda(args.data_dir)
+laps, telemetry_3_mejores, telemetry_piloto, weather = cargar_datos_eda(DATA_DIR)
 
 # 1) Rendimiento por vuelta (laps_clean.csv)
 print("🏎️ Analizando tiempos de vuelta...")
-resumen_por_piloto(laps).to_csv(os.path.join(args.tables_dir, "resumen_por_piloto.csv"), index=False)
-resumen_por_equipo(laps).to_csv(os.path.join(args.tables_dir, "resumen_por_equipo.csv"), index=False)
-plot_boxplot_tiempos_por_piloto(laps, args.figures_dir)
-plot_boxplot_tiempos_por_equipo(laps, args.figures_dir)
-plot_evolucion_ritmo(laps, args.figures_dir)
-plot_efecto_compuesto(laps, args.figures_dir)
-plot_efecto_vida_neumatico(laps, args.figures_dir)
-plot_tiempos_sector(laps, args.figures_dir)
+resumen_por_piloto(laps).to_csv(os.path.join(TABLES_DIR, "resumen_por_piloto.csv"), index=False)
+resumen_por_equipo(laps).to_csv(os.path.join(TABLES_DIR, "resumen_por_equipo.csv"), index=False)
+plot_boxplot_tiempos_por_piloto(laps, FIGURES_DIR)
+plot_boxplot_tiempos_por_equipo(laps, FIGURES_DIR)
+plot_evolucion_ritmo(laps, FIGURES_DIR)
+plot_efecto_compuesto(laps, FIGURES_DIR)
+plot_efecto_vida_neumatico(laps, FIGURES_DIR)
+plot_tiempos_sector(laps, FIGURES_DIR)
 
 # 2) Telemetría: velocidad, acelerador, freno, marchas, DRS
 print("📡 Analizando telemetría...")
 resumen_velocidad_por_piloto(telemetry_3_mejores).to_csv(
-    os.path.join(args.tables_dir, "resumen_velocidad_por_piloto.csv"), index=False
+    os.path.join(TABLES_DIR, "resumen_velocidad_por_piloto.csv"), index=False
 )
-plot_perfil_velocidad(telemetry_3_mejores, args.figures_dir)
-plot_distribucion_velocidad(telemetry_3_mejores, args.figures_dir)
-plot_perfil_acelerador_freno(telemetry_piloto, args.figures_dir)
-plot_velocidad_maxima_por_piloto(telemetry_3_mejores, args.figures_dir)
-plot_uso_drs(telemetry_3_mejores, args.figures_dir)
-plot_distribucion_marchas(telemetry_3_mejores, args.figures_dir)
+plot_perfil_velocidad(telemetry_3_mejores, FIGURES_DIR)
+plot_distribucion_velocidad(telemetry_3_mejores, FIGURES_DIR)
+plot_perfil_acelerador_freno(telemetry_piloto, FIGURES_DIR)
+plot_velocidad_maxima_por_piloto(telemetry_3_mejores, FIGURES_DIR)
+plot_uso_drs(telemetry_3_mejores, FIGURES_DIR)
+plot_distribucion_marchas(telemetry_3_mejores, FIGURES_DIR)
 
 # 3) Condiciones meteorológicas
 print("🌤️ Analizando condiciones meteorológicas...")
-resumen_meteorologico(weather).to_csv(os.path.join(args.tables_dir, "resumen_meteorologico.csv"), index=False)
-plot_evolucion_meteorologia(weather, args.figures_dir)
-correlacion = correlacion_meteorologia_ritmo(laps, weather, args.figures_dir)
+resumen_meteorologico(weather).to_csv(os.path.join(TABLES_DIR, "resumen_meteorologico.csv"), index=False)
+plot_evolucion_meteorologia(weather, FIGURES_DIR)
+correlacion = correlacion_meteorologia_ritmo(laps, weather, FIGURES_DIR)
 if correlacion is not None:
     print(f"🌡️ Correlación aproximada temperatura de pista / tiempo de vuelta: {correlacion:.3f}")
 
 # 4) Relaciones piloto-equipo-tiempo (mapas de calor)
 print("🗺️ Generando mapas de calor...")
-heatmap_ritmo_piloto_vuelta(laps, args.figures_dir)
-heatmap_correlacion_telemetria(telemetry_3_mejores, args.figures_dir)
+heatmap_ritmo_piloto_vuelta(laps, FIGURES_DIR)
+heatmap_correlacion_telemetria(telemetry_3_mejores, FIGURES_DIR)
 
 print("🎉 Análisis exploratorio finalizado con éxito.")

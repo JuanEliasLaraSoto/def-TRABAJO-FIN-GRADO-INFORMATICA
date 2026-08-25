@@ -39,6 +39,10 @@ def detectar_curvas(spline_track, radio_umbral=RADIO_UMBRAL_CURVA_M):
                     "s_apex_m": float(spline_track.loc[apex_idx, "s"]),
                     "X_apex": float(spline_track.loc[apex_idx, "X"]),
                     "Y_apex": float(spline_track.loc[apex_idx, "Y"]),
+                    # Rango de distancia (m) del tramo de curva, para poder
+                    # cruzarlo después con telemetría real por posición.
+                    "s_inicio_m": float(segmento["s"].iloc[0]),
+                    "s_fin_m": float(segmento["s"].iloc[-1]),
                 }
             )
         else:

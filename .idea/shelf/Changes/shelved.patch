@@ -1,0 +1,557 @@
+Index: out/main.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/out/main.log b/out/main.log
+new file mode 100644
+--- /dev/null	(date 1788298741101)
++++ b/out/main.log	(date 1788298741101)
+@@ -0,0 +1,339 @@
++This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.25)  1 SEP 2026 23:38
++entering extended mode
++ restricted \write18 enabled.
++ file:line:error style messages enabled.
++ %&-line parsing enabled.
++**./main.tex
++(main.tex
++LaTeX2e <2025-11-01>
++L3 programming layer <2025-12-24>
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
++Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
++File: bk12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
++)
++\c@part=\count275
++\c@chapter=\count276
++\c@section=\count277
++\c@subsection=\count278
++\c@subsubsection=\count279
++\c@paragraph=\count280
++\c@subparagraph=\count281
++\c@figure=\count282
++\c@table=\count283
++\abovecaptionskip=\skip49
++\belowcaptionskip=\skip50
++\bibindent=\dimen148
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/hyphenat\hyphenat.sty
++Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
++
++
++Package hyphenat Warning: *******************************
++(hyphenat)                * You have used the htt option.
++(hyphenat)                * You are likely to get many Font Warning messages.
++(hyphenat)                * These can usually be ignored.
++(hyphenat)                *******************************.
++
++\langwohyphens=\language79
++LaTeX Info: Redefining \_ on input line 43.
++) (C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
++Package: blindtext 2012/01/06 V2.0 blindtext-Package
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
++Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
++)
++\c@blindtext=\count284
++\c@Blindtext=\count285
++\c@blind@countparstart=\count286
++\blind@countxx=\count287
++\blindtext@numBlindtext=\count288
++\blind@countyy=\count289
++\c@blindlist=\count290
++\c@blindlistlevel=\count291
++\c@blindlist@level=\count292
++\blind@listitem=\count293
++\c@blind@listcount=\count294
++\c@blind@levelcount=\count295
++\blind@mathformula=\count296
++\blind@Mathformula=\count297
++\c@blind@randomcount=\count298
++\c@blind@randommax=\count299
++\c@blind@pangramcount=\count300
++\c@blind@pangrammax=\count301
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/mwe\mwe.sty
++Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
++Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
++Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
++\KV@toks@=\toks17
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
++Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
++Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
++File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
++)
++Package graphics Info: Driver file: pdftex.def on input line 106.
++ (C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
++File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
++))
++\Gin@req@height=\dimen149
++\Gin@req@width=\dimen150
++) (C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3key
++s2e.sty
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
++Package: expl3 2025-12-24 L3 programming layer (loader) 
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdfte
++x.def
++File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
++\l__color_backend_stack_int=\count302
++))
++Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
++)
++Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
++\g__lipsum_par_int=\count303
++\l__lipsum_a_int=\count304
++\l__lipsum_b_int=\count305
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex)))
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
++Package: csquotes 2026-05-19 v5.2p context-sensitive quotations (JAW)
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
++Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
++\etb@tempcnta=\count306
++)
++\csq@reset=\count307
++\csq@gtype=\count308
++\csq@glevel=\count309
++\csq@qlevel=\count310
++\csq@maxlvl=\count311
++\csq@tshold=\count312
++\csq@ltx@everypar=\toks18
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
++File: csquotes.def 2026-05-19 v5.2p csquotes generic definitions (JAW)
++)
++Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
++Package csquotes Info: ... configuration file loaded successfully.
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
++File: csquotes.cfg 
++))
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
++Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
++\heavyrulewidth=\dimen151
++\lightrulewidth=\dimen152
++\cmidrulewidth=\dimen153
++\belowrulesep=\dimen154
++\belowbottomsep=\dimen155
++\aboverulesep=\dimen156
++\abovetopsep=\dimen157
++\cmidrulesep=\dimen158
++\cmidrulekern=\dimen159
++\defaultaddspace=\dimen160
++\@cmidla=\count313
++\@cmidlb=\count314
++\@aboverulesep=\dimen161
++\@belowrulesep=\dimen162
++\@thisruleclass=\count315
++\@lastruleclass=\count316
++\@thisrulewidth=\dimen163
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
++Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
++\multirow@colwidth=\skip51
++\multirow@cntb=\count317
++\multirow@dima=\skip52
++\bigstrutjot=\dimen164
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
++Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
++Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
++\col@sep=\dimen165
++\ar@mcellbox=\box53
++\extrarowheight=\dimen166
++\NC@list=\toks19
++\extratabsurround=\skip53
++\backup@length=\skip54
++\ar@cellbox=\box54
++)
++\TX@col@width=\dimen167
++\TX@old@table=\dimen168
++\TX@old@col=\dimen169
++\TX@target=\dimen170
++\TX@delta=\dimen171
++\TX@cols=\count318
++\TX@ftn=\toks20
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
++Package: siunitx 2026-05-15 v3.5.5 A comprehensive (SI) units package
++\l__siunitx_number_uncert_offset_int=\count319
++\l__siunitx_number_exponent_fixed_int=\count320
++\l__siunitx_number_min_decimal_int=\count321
++\l__siunitx_number_min_integer_int=\count322
++\l__siunitx_number_round_precision_int=\count323
++\l__siunitx_number_lower_threshold_int=\count324
++\l__siunitx_number_upper_threshold_int=\count325
++\l__siunitx_number_group_first_int=\count326
++\l__siunitx_number_group_size_int=\count327
++\l__siunitx_number_group_min_int=\count328
++\l__siunitx_number_group_minimum_int=\count329
++\l__siunitx_compound_count_int=\count330
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/translations\translations
++.sty
++Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
++ (CN)
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.s
++ty
++Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
++)
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
++Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
++) (C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
++Package: iftex 2024/12/12 v1.0g TeX engine tests
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
++Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
++)
++Package pdftexcmds Info: \pdf@primitive is available.
++Package pdftexcmds Info: \pdf@ifprimitive is available.
++Package pdftexcmds Info: \pdfdraftmode found.
++))
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
++Package: amstext 2024/11/17 v2.01 AMS text
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
++File: amsgen.sty 1999/11/30 v2.0 generic functions
++\@emptytoks=\toks21
++\ex@=\dimen172
++))
++\l__siunitx_table_tmp_box=\box55
++\l__siunitx_table_tmp_dim=\dimen173
++\l__siunitx_table_column_width_dim=\dimen174
++\l__siunitx_table_integer_box=\box56
++\l__siunitx_table_decimal_box=\box57
++\l__siunitx_table_uncert_box=\box58
++\l__siunitx_table_before_box=\box59
++\l__siunitx_table_after_box=\box60
++\l__siunitx_table_before_dim=\dimen175
++\l__siunitx_table_carry_dim=\dimen176
++\l__siunitx_unit_tmp_int=\count331
++\l__siunitx_unit_position_int=\count332
++\l__siunitx_unit_total_int=\count333
++\l__siunitx_sexagesimal_tmp_dim=\dimen177
++\l__siunitx_sexagesimal_marker_box=\box61
++\l__siunitx_sexagesimal_unit_box=\box62
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
++Package: amsmath 2025/07/09 v2.17z AMS math features
++\@mathmargin=\skip55
++
++For additional information on amsmath, use the `?' option.
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
++Package: amsbsy 1999/11/29 v1.2d Bold Symbols
++\pmbraise@=\dimen178
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
++Package: amsopn 2022/04/08 v2.04 operator names
++)
++\inf@bad=\count334
++LaTeX Info: Redefining \frac on input line 233.
++\uproot@=\count335
++\leftroot@=\count336
++LaTeX Info: Redefining \overline on input line 398.
++LaTeX Info: Redefining \colon on input line 409.
++\classnum@=\count337
++\DOTSCASE@=\count338
++LaTeX Info: Redefining \ldots on input line 495.
++LaTeX Info: Redefining \dots on input line 498.
++LaTeX Info: Redefining \cdots on input line 619.
++\Mathstrutbox@=\box63
++\strutbox@=\box64
++LaTeX Info: Redefining \big on input line 721.
++LaTeX Info: Redefining \Big on input line 722.
++LaTeX Info: Redefining \bigg on input line 723.
++LaTeX Info: Redefining \Bigg on input line 724.
++\big@size=\dimen179
++LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
++LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
++\macc@depth=\count339
++LaTeX Info: Redefining \bmod on input line 904.
++LaTeX Info: Redefining \pmod on input line 909.
++LaTeX Info: Redefining \smash on input line 939.
++LaTeX Info: Redefining \relbar on input line 969.
++LaTeX Info: Redefining \Relbar on input line 970.
++\c@MaxMatrixCols=\count340
++\dotsspace@=\muskip17
++\c@parentequation=\count341
++\dspbrk@lvl=\count342
++\tag@help=\toks22
++\row@=\count343
++\column@=\count344
++\maxfields@=\count345
++\andhelp@=\toks23
++\eqnshift@=\dimen180
++\alignsep@=\dimen181
++\tagshift@=\dimen182
++\tagwidth@=\dimen183
++\totwidth@=\dimen184
++\lineht@=\dimen185
++\@envbody=\toks24
++\multlinegap=\skip56
++\multlinetaggap=\skip57
++\mathdisplay@stack=\toks25
++LaTeX Info: Redefining \[ on input line 2950.
++LaTeX Info: Redefining \] on input line 2951.
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
++Package: amssymb 2013/01/14 v3.01 AMS font symbols
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
++Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
++\symAMSa=\mathgroup4
++\symAMSb=\mathgroup5
++LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
++LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
++(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
++))
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.sty
++Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
++nment
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
++Package: float 2001/11/08 v1.3d Float enhancements (AL)
++\c@float@type=\count346
++\float@exts=\toks26
++\float@box=\box65
++\@float@everytoks=\toks27
++\@floatcapt=\box66
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
++Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
++)
++\@float@every@algorithm=\toks28
++\c@algorithm=\count347
++)
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algpseudocod
++e.sty
++Package: algpseudocode 
++
++(C:\Users\Msi\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algorithmicx
++.sty
++Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
++
++Document Style algorithmicx 1.2 - a greatly impr
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"8742f621-e83b-4132-9458-acd17621436d\" name=\"Changes\" comment=\"cambios analisis exploratorio\">\r\n      <change afterPath=\"$PROJECT_DIR$/Analisis_trazado/perfil_velocidad_curvas.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Analisis_trazado/validacion_multicircuito.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Analisis_variabilidad/graficas_variabilidad.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Analisis_variabilidad/main.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Analisis_variabilidad/metricas_variabilidad.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Analisis_variabilidad/perfil_variabilidad.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Definitivo Anteproyecto Juan Elias Lara Soto.pdf\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Extraccion_limpieza/comparar_frecuencias_interpolacion.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Extraccion_limpieza/extraer_multicircuito.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/main.aux\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/main.bbl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/main.bcf\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/main.blg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/main.lof\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/main.log\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/main.lot\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/main.nlo\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/main.pdf\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/main.run.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/main.tex\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/main.toc\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/arima/acf_pacf_velocidad.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/arima/comparacion_experimentos.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/arima/exp1_busqueda_hiperparametros.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/arima/exp1_errores.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/arima/exp1_prediccion_vs_real.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/arima/exp1_r2_hiperparametros.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/arima/exp2_busqueda_hiperparametros.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/arima/exp2_errores.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/arima/exp2_prediccion_vs_real.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/arima/exp2_r2_hiperparametros.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/eda/boxplot_tiempo_por_compuesto.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/eda/comparativa_frecuencias_interpolacion.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/eda/heatmap_correlacion_telemetria.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/eda/heatmap_ritmo_piloto_vuelta.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/eda/perfil_velocidad_distancia.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/multicircuito/mapa_trazado_dificultad_monaco.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/multicircuito/mapa_trazado_dificultad_silverstone.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/multicircuito/mapa_trazado_dificultad_singapur.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/multicircuito/mapa_trazado_dificultad_spa.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/trazado/mapa_trazado_curvas_numeradas.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/trazado/mapa_trazado_dificultad.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/trazado/relacion_radio_velocidad.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/variabilidad/boxplot_cv_speed_pct_por_compuesto.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/variabilidad/cv_speed_pct_vs_ritmo.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/variabilidad/dfaint_alpha_vs_tyrelife.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/variabilidad/distribuciones_metricas_variabilidad.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/variabilidad/perfil_extremos_sampen.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/MEMORIA/template/imagenes/variabilidad/poincare_vuelta_1.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Modelado_arima/experimentos.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Modelado_arima/graficas_arima.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Modelado_arima/main.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Modelado_arima/modelo_arima.py\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/_extended_timing_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/car_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/driver_info.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/lap_count.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/position_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/race_control_messages.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/session_info.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/session_status_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/timing_app_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/track_status_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/weather_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/_extended_timing_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/car_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/driver_info.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/lap_count.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/position_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/race_control_messages.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/session_info.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/session_status_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/timing_app_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/track_status_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/weather_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/_extended_timing_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/car_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/driver_info.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/lap_count.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/position_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/race_control_messages.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/session_info.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/session_status_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/timing_app_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/track_status_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/weather_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/_extended_timing_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/car_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/driver_info.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/lap_count.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/position_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/race_control_messages.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/session_info.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/session_status_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/timing_app_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/track_status_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/weather_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/_extended_timing_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/car_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/driver_info.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/lap_count.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/position_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/race_control_messages.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/session_info.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/session_status_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/timing_app_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/track_status_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/weather_data.ff1pkl\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/cache/fastf1_http_cache.sqlite\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/csv_data/arima/telemetry_todas_vueltas.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/csv_data/arima/telemetry_todas_vueltas_interpolada.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/csv_data/comparar_frecuencias/comparativa_frecuencias_interpolacion.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/csv_data/multicircuito/monaco/circuit_info.txt\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/csv_data/multicircuito/monaco/curvatura_interpolada.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/csv_data/multicircuito/silverstone/circuit_info.txt\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/csv_data/multicircuito/silverstone/curvatura_interpolada.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/csv_data/multicircuito/singapur/circuit_info.txt\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/csv_data/multicircuito/singapur/curvatura_interpolada.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/csv_data/multicircuito/spa/circuit_info.txt\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/csv_data/multicircuito/spa/curvatura_interpolada.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/eda/analisis_exploratorio/resumen_meteorologico.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/eda/analisis_exploratorio/resumen_por_equipo.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/eda/analisis_exploratorio/resumen_por_piloto.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/eda/analisis_exploratorio/resumen_velocidad_por_piloto.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/eda/analisis_trazado/multicircuito/validacion_multicircuito.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/eda/analisis_trazado/resumen_curvas_trazado.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/eda/analisis_variabilidad/metricas_variabilidad_por_vuelta.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/eda/modelado_arima/exp1_busqueda_hiperparametros.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/eda/modelado_arima/exp2_busqueda_hiperparametros.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/eda/modelado_arima/resumen_experimentos.csv\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/barplot_uso_drs.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/barplot_velocidad_maxima.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/boxplot_tiempo_por_compuesto.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/boxplot_tiempos_por_equipo.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/boxplot_tiempos_por_piloto.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/boxplot_tiempos_sector.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/distribucion_marchas.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/evolucion_meteorologia.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/evolucion_ritmo_carrera.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/heatmap_correlacion_telemetria.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/heatmap_ritmo_piloto_vuelta.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/histograma_velocidad.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/perfil_acelerador_freno.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/perfil_velocidad_distancia.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_exploratorio/scatter_degradacion_neumatico.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_trazado/mapa_trazado_curvas_numeradas.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_trazado/mapa_trazado_dificultad.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_trazado/multicircuito/mapa_trazado_dificultad_monaco.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_trazado/multicircuito/mapa_trazado_dificultad_silverstone.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_trazado/multicircuito/mapa_trazado_dificultad_singapur.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_trazado/multicircuito/mapa_trazado_dificultad_spa.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_trazado/relacion_radio_velocidad.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/boxplot_cv_speed_pct_por_compuesto.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/boxplot_dfaint_alpha_por_compuesto.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/boxplot_mage_por_compuesto.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/boxplot_sd1_por_compuesto.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/cv_speed_pct_vs_ritmo.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/cv_speed_pct_vs_tyrelife.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/dfaint_alpha_vs_ritmo.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/dfaint_alpha_vs_tyrelife.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/distribuciones_metricas_variabilidad.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/mage_vs_ritmo.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/mage_vs_tyrelife.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/perfil_extremos_cv_speed_pct.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/poincare_vuelta_1.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/sd1_vs_ritmo.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/analisis_variabilidad/sd1_vs_tyrelife.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/extraccion_limpieza/comparativa_frecuencias_interpolacion.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/modelado_arima/acf_pacf_velocidad.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/modelado_arima/comparacion_experimentos.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/modelado_arima/exp1_busqueda_hiperparametros.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/modelado_arima/exp1_errores.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/modelado_arima/exp1_prediccion_vs_real.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/modelado_arima/exp1_r2_hiperparametros.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/modelado_arima/exp2_busqueda_hiperparametros.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/modelado_arima/exp2_errores.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/modelado_arima/exp2_prediccion_vs_real.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/figures/modelado_arima/exp2_r2_hiperparametros.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/main.log\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/out/main.synctex(busy)\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/MEMORIA/references.bib\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/MEMORIA/references.bib\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"ROOT_SYNC\" value=\"DONT_SYNC\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;JuanEliasLaraSoto&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/JuanEliasLaraSoto/TRABAJO-FIN-GRADO-INFORMATICA.git&quot;,\r\n    &quot;accountId&quot;: &quot;6d3d5318-afdf-4e56-91f1-4ada1d375e94&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"3HSaLX7LXUCMjmUm9p8bpMhCzUm\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"BibTeX.main bibliography.executor\": \"Run\",\r\n    \"LaTeX.extraccion_limpieza.executor\": \"Run\",\r\n    \"LaTeX.main.executor\": \"Run\",\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"Python.extraer_todas_vueltas.executor\": \"Run\",\r\n    \"Python.main.executor\": \"Run\",\r\n    \"Python.telemetria.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"settings.editor.selected.configurable\": \"preferences.lookFeel\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"main bibliography\" type=\"BIBTEX_RUN_CONFIGURATION\" factoryName=\"LaTeX configuration factory\">\r\n      <texify-bibtex>\r\n        <compiler>BIBER</compiler>\r\n        <compiler-path />\r\n        <compiler-arguments />\r\n        <envs>\r\n          <env name=\"BIBINPUTS\" value=\"$PROJECT_DIR$/MEMORIA\" />\r\n          <env name=\"BSTINPUTS\" value=\"$PROJECT_DIR$/MEMORIA;\" />\r\n        </envs>\r\n        <main-file>$PROJECT_DIR$/MEMORIA/main.tex</main-file>\r\n        <aux-dir />\r\n        <latex-distribution>TEXLIVE</latex-distribution>\r\n      </texify-bibtex>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main\" type=\"LATEX_RUN_CONFIGURATION\" factoryName=\"LaTeX configuration factory\" temporary=\"true\">\r\n      <texify>\r\n        <compiler>PDFLATEX</compiler>\r\n        <compiler-path />\r\n        <pdf-viewer>none</pdf-viewer>\r\n        <require-focus>true</require-focus>\r\n        <viewer-command />\r\n        <compiler-arguments />\r\n        <envs />\r\n        <expand-macros-in-environment-variables>false</expand-macros-in-environment-variables>\r\n        <before-run-command />\r\n        <main-file>$PROJECT_DIR$/MEMORIA/main.tex</main-file>\r\n        <output-path>$PROJECT_DIR$/out</output-path>\r\n        <auxil-path>$PROJECT_DIR$/auxil</auxil-path>\r\n        <working-directory>{mainFileParent}</working-directory>\r\n        <compile-twice>false</compile-twice>\r\n        <output-format>PDF</output-format>\r\n        <latex-distribution>MODULE_SDK</latex-distribution>\r\n        <has-been-run>false</has-been-run>\r\n        <bib-run-config>[BibTeX.main bibliography]</bib-run-config>\r\n        <makeindex-run-config>[]</makeindex-run-config>\r\n      </texify>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"LaTeX.main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-4762d8aabb82-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.30387.173\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"8742f621-e83b-4132-9458-acd17621436d\" name=\"Changes\" comment=\"\" />\r\n      <created>1785863867957</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1785863867957</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1785864303420</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1785864303420</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Initial commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1786050986613</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1786050986613</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"extraccion-limpieza done\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1786052361182</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1786052361182</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"extraccion-limpieza csv\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1786052453070</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1786052453070</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"analisis-trazado\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1786058349033</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1786058349033</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"analisis-exploratorio\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1786058375322</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1786058375322</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"analisis-exploratorio figuras\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1786058423702</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1786058423702</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"analisis-trazado figuras\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1786058445689</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1786058445689</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"analisis-trazado finalizado\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1787683018573</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1787683018573</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"cambios extraccion-limpieza\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1787683050490</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1787683050490</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"cambios analisis exploratorio\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1787683070041</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1787683070041</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"cambios analisis exploratorio\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1788299141051</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1788299141051</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"13\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Initial commit\" />\r\n    <MESSAGE value=\"extraccion-limpieza done\" />\r\n    <MESSAGE value=\"extraccion-limpieza csv\" />\r\n    <MESSAGE value=\"analisis-trazado\" />\r\n    <MESSAGE value=\"analisis-exploratorio\" />\r\n    <MESSAGE value=\"analisis-exploratorio figuras\" />\r\n    <MESSAGE value=\"analisis-trazado figuras\" />\r\n    <MESSAGE value=\"analisis-trazado finalizado\" />\r\n    <MESSAGE value=\"cambios extraccion-limpieza\" />\r\n    <MESSAGE value=\"cambios analisis exploratorio\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"cambios analisis exploratorio\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision e28d2e1580e08c31ba7596c6088f600cddd47249)
++++ b/.idea/workspace.xml	(date 1788300574379)
+@@ -2,16 +2,6 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="8742f621-e83b-4132-9458-acd17621436d" name="Changes" comment="cambios analisis exploratorio">
+-      <change afterPath="$PROJECT_DIR$/Analisis_trazado/perfil_velocidad_curvas.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Analisis_trazado/validacion_multicircuito.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Analisis_variabilidad/graficas_variabilidad.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Analisis_variabilidad/main.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Analisis_variabilidad/metricas_variabilidad.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Analisis_variabilidad/perfil_variabilidad.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Definitivo Anteproyecto Juan Elias Lara Soto.pdf" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Extraccion_limpieza/comparar_frecuencias_interpolacion.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Extraccion_limpieza/extraer_multicircuito.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/MEMORIA" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/MEMORIA/main.aux" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/MEMORIA/main.bbl" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/MEMORIA/main.bcf" afterDir="false" />
+@@ -52,138 +42,10 @@
+       <change afterPath="$PROJECT_DIR$/MEMORIA/template/imagenes/variabilidad/distribuciones_metricas_variabilidad.png" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/MEMORIA/template/imagenes/variabilidad/perfil_extremos_sampen.png" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/MEMORIA/template/imagenes/variabilidad/poincare_vuelta_1.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Modelado_arima/experimentos.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Modelado_arima/graficas_arima.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Modelado_arima/main.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Modelado_arima/modelo_arima.py" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/_extended_timing_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/car_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/driver_info.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/lap_count.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/position_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/race_control_messages.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/session_info.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/session_status_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/timing_app_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/track_status_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-05-28_Monaco_Grand_Prix/2023-05-28_Race/weather_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/_extended_timing_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/car_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/driver_info.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/lap_count.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/position_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/race_control_messages.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/session_info.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/session_status_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/timing_app_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/track_status_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-09_British_Grand_Prix/2023-07-09_Race/weather_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/_extended_timing_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/car_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/driver_info.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/lap_count.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/position_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/race_control_messages.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/session_info.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/session_status_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/timing_app_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/track_status_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-07-30_Belgian_Grand_Prix/2023-07-30_Race/weather_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/_extended_timing_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/car_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/driver_info.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/lap_count.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/position_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/race_control_messages.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/session_info.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/session_status_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/timing_app_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/track_status_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-03_Italian_Grand_Prix/2023-09-03_Race/weather_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/_extended_timing_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/car_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/driver_info.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/lap_count.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/position_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/race_control_messages.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/session_info.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/session_status_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/timing_app_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/track_status_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/2023/2023-09-17_Singapore_Grand_Prix/2023-09-17_Race/weather_data.ff1pkl" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/cache/fastf1_http_cache.sqlite" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/csv_data/arima/telemetry_todas_vueltas.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/csv_data/arima/telemetry_todas_vueltas_interpolada.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/csv_data/comparar_frecuencias/comparativa_frecuencias_interpolacion.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/csv_data/multicircuito/monaco/circuit_info.txt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/csv_data/multicircuito/monaco/curvatura_interpolada.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/csv_data/multicircuito/silverstone/circuit_info.txt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/csv_data/multicircuito/silverstone/curvatura_interpolada.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/csv_data/multicircuito/singapur/circuit_info.txt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/csv_data/multicircuito/singapur/curvatura_interpolada.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/csv_data/multicircuito/spa/circuit_info.txt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/csv_data/multicircuito/spa/curvatura_interpolada.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/eda/analisis_exploratorio/resumen_meteorologico.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/eda/analisis_exploratorio/resumen_por_equipo.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/eda/analisis_exploratorio/resumen_por_piloto.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/eda/analisis_exploratorio/resumen_velocidad_por_piloto.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/eda/analisis_trazado/multicircuito/validacion_multicircuito.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/eda/analisis_trazado/resumen_curvas_trazado.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/eda/analisis_variabilidad/metricas_variabilidad_por_vuelta.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/eda/modelado_arima/exp1_busqueda_hiperparametros.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/eda/modelado_arima/exp2_busqueda_hiperparametros.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/eda/modelado_arima/resumen_experimentos.csv" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/barplot_uso_drs.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/barplot_velocidad_maxima.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/boxplot_tiempo_por_compuesto.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/boxplot_tiempos_por_equipo.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/boxplot_tiempos_por_piloto.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/boxplot_tiempos_sector.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/distribucion_marchas.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/evolucion_meteorologia.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/evolucion_ritmo_carrera.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/heatmap_correlacion_telemetria.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/heatmap_ritmo_piloto_vuelta.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/histograma_velocidad.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/perfil_acelerador_freno.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/perfil_velocidad_distancia.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_exploratorio/scatter_degradacion_neumatico.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_trazado/mapa_trazado_curvas_numeradas.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_trazado/mapa_trazado_dificultad.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_trazado/multicircuito/mapa_trazado_dificultad_monaco.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_trazado/multicircuito/mapa_trazado_dificultad_silverstone.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_trazado/multicircuito/mapa_trazado_dificultad_singapur.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_trazado/multicircuito/mapa_trazado_dificultad_spa.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_trazado/relacion_radio_velocidad.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/boxplot_cv_speed_pct_por_compuesto.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/boxplot_dfaint_alpha_por_compuesto.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/boxplot_mage_por_compuesto.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/boxplot_sd1_por_compuesto.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/cv_speed_pct_vs_ritmo.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/cv_speed_pct_vs_tyrelife.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/dfaint_alpha_vs_ritmo.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/dfaint_alpha_vs_tyrelife.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/distribuciones_metricas_variabilidad.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/mage_vs_ritmo.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/mage_vs_tyrelife.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/perfil_extremos_cv_speed_pct.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/poincare_vuelta_1.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/sd1_vs_ritmo.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/analisis_variabilidad/sd1_vs_tyrelife.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/extraccion_limpieza/comparativa_frecuencias_interpolacion.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/modelado_arima/acf_pacf_velocidad.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/modelado_arima/comparacion_experimentos.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/modelado_arima/exp1_busqueda_hiperparametros.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/modelado_arima/exp1_errores.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/modelado_arima/exp1_prediccion_vs_real.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/modelado_arima/exp1_r2_hiperparametros.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/modelado_arima/exp2_busqueda_hiperparametros.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/modelado_arima/exp2_errores.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/modelado_arima/exp2_prediccion_vs_real.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/figures/modelado_arima/exp2_r2_hiperparametros.png" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/out/main.log" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/out/main.synctex(busy)" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/MEMORIA" beforeDir="false" afterPath="$PROJECT_DIR$/MEMORIA" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/MEMORIA/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/MEMORIA/references.bib" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -199,6 +61,11 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+     <option name="ROOT_SYNC" value="DONT_SYNC" />
+   </component>
+@@ -236,7 +103,7 @@
+     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+     "RunOnceActivity.git.unshallow": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "master",
++    "git-widget-placeholder": "master2",
+     "settings.editor.selected.configurable": "preferences.lookFeel"
+   }
+ }]]></component>
+@@ -397,7 +264,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1788299141051</updated>
+     </task>
+-    <option name="localTasksCounter" value="13" />
++    <task id="LOCAL-00013" summary="cambios analisis exploratorio">
++      <option name="closed" value="true" />
++      <created>1788299971733</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1788299971733</updated>
++    </task>
++    <option name="localTasksCounter" value="14" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+diff --git a/out/main.synctex(busy) b/out/main.synctex(busy)
+new file mode 100644

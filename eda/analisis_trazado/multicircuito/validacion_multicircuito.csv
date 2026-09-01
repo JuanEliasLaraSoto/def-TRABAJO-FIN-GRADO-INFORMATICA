@@ -1,0 +1,5 @@
+Circuito,GP,Hipotesis,Longitud_independiente_m,Longitud_spline_m,Error_longitud_pct,N_curvas_detectadas,Figura
+spa,Belgian Grand Prix,bien,6947.9,6949.1,0.02,19,mapa_trazado_dificultad_spa.png
+silverstone,British Grand Prix,bien,5801.4,5828.2,0.46,18,mapa_trazado_dificultad_silverstone.png
+monaco,Monaco Grand Prix,mal,3274.9,3271.5,0.1,27,mapa_trazado_dificultad_monaco.png
+singapur,Singapore Grand Prix,mal,4889.1,4862.8,0.54,19,mapa_trazado_dificultad_singapur.png

@@ -1,0 +1,8 @@
+Nombre: silverstone
+GP: British Grand Prix
+Year: 2023
+Session: R
+Hipotesis: bien
+Longitud independiente (Distance, m): 5801.390045308669
+Longitud reconstruida (spline, m): 5828.179798849964
+Error longitud (%): 0.4617816304724863

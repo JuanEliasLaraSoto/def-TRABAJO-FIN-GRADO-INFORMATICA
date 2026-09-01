@@ -1,0 +1,8 @@
+Nombre: singapur
+GP: Singapore Grand Prix
+Year: 2023
+Session: R
+Hipotesis: mal
+Longitud independiente (Distance, m): 4889.085559605229
+Longitud reconstruida (spline, m): 4862.76064636098
+Error longitud (%): 0.538442474023188

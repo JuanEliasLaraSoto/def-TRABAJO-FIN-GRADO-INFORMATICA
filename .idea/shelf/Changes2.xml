@@ -1,0 +1,120 @@
+<changelist name="Changes2" date="1788300598549" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/shelved.patch" />
+  <option name="DESCRIPTION" value="Changes" />
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/arima/acf_pacf_velocidad.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/acf_pacf_velocidad.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/variabilidad/boxplot_cv_speed_pct_por_compuesto.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/boxplot_cv_speed_pct_por_compuesto.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/eda/boxplot_tiempo_por_compuesto.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/boxplot_tiempo_por_compuesto.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/arima/comparacion_experimentos.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/comparacion_experimentos.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/eda/comparativa_frecuencias_interpolacion.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/comparativa_frecuencias_interpolacion.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/variabilidad/cv_speed_pct_vs_ritmo.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/cv_speed_pct_vs_ritmo.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/variabilidad/dfaint_alpha_vs_tyrelife.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/dfaint_alpha_vs_tyrelife.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/variabilidad/distribuciones_metricas_variabilidad.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/distribuciones_metricas_variabilidad.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/arima/exp1_busqueda_hiperparametros.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/exp1_busqueda_hiperparametros.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/arima/exp1_errores.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/exp1_errores.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/arima/exp1_prediccion_vs_real.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/exp1_prediccion_vs_real.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/arima/exp1_r2_hiperparametros.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/exp1_r2_hiperparametros.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/arima/exp2_busqueda_hiperparametros.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/exp2_busqueda_hiperparametros.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/arima/exp2_errores.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/exp2_errores.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/arima/exp2_prediccion_vs_real.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/exp2_prediccion_vs_real.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/arima/exp2_r2_hiperparametros.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/exp2_r2_hiperparametros.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/eda/heatmap_correlacion_telemetria.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/heatmap_correlacion_telemetria.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/eda/heatmap_ritmo_piloto_vuelta.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/heatmap_ritmo_piloto_vuelta.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/main.pdf" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/main.pdf" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/trazado/mapa_trazado_curvas_numeradas.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/mapa_trazado_curvas_numeradas.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/trazado/mapa_trazado_dificultad.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/mapa_trazado_dificultad.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/multicircuito/mapa_trazado_dificultad_monaco.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/mapa_trazado_dificultad_monaco.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/multicircuito/mapa_trazado_dificultad_silverstone.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/mapa_trazado_dificultad_silverstone.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/multicircuito/mapa_trazado_dificultad_singapur.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/mapa_trazado_dificultad_singapur.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/multicircuito/mapa_trazado_dificultad_spa.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/mapa_trazado_dificultad_spa.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/variabilidad/perfil_extremos_sampen.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/perfil_extremos_sampen.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/eda/perfil_velocidad_distancia.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/perfil_velocidad_distancia.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/variabilidad/poincare_vuelta_1.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/poincare_vuelta_1.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="MEMORIA/template/imagenes/trazado/relacion_radio_velocidad.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes2/relacion_radio_velocidad.png" />
+  </binary>
+</changelist>

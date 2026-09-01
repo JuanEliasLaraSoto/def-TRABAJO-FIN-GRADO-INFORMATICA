@@ -1,0 +1,8 @@
+Nombre: monaco
+GP: Monaco Grand Prix
+Year: 2023
+Session: R
+Hipotesis: mal
+Longitud independiente (Distance, m): 3274.9450089791217
+Longitud reconstruida (spline, m): 3271.5466674810928
+Error longitud (%): 0.10376789499400653

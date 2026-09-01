@@ -1,0 +1,4 @@
+Frecuencia_s,Frecuencia_Hz,N_puntos_vuelta,Distancia_media_entre_muestras_m,Puntos_en_frenada_1.5s
+1.0,1.0,86,67.25,2
+0.1,10.0,856,6.73,15
+0.01,100.0,8559,0.67,150

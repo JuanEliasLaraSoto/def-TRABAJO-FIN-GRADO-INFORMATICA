@@ -1,0 +1,8 @@
+Nombre: spa
+GP: Belgian Grand Prix
+Year: 2023
+Session: R
+Hipotesis: bien
+Longitud independiente (Distance, m): 6947.921197955482
+Longitud reconstruida (spline, m): 6949.081902124378
+Error longitud (%): 0.01670577624336533

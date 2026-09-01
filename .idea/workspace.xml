@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8742f621-e83b-4132-9458-acd17621436d" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extraccion_limpieza/almacenar_csv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extraccion_limpieza/circuito.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extraccion_limpieza/condiciones_meteorologicas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extraccion_limpieza/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extraccion_limpieza/sesion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extraccion_limpieza/telemetria.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extraccion_limpieza/vueltas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TRABAJO-FIN-GRADO-INFORMATICA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TRABAJO-FIN-GRADO-INFORMATICA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8742f621-e83b-4132-9458-acd17621436d" name="Changes" comment="cambios analisis exploratorio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analisis_exploratorio/estadisticas_meteorologicas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analisis_exploratorio/estadisticas_meteorologicas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analisis_exploratorio/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analisis_exploratorio/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analisis_trazado/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analisis_trazado/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analisis_trazado/mapa_trazado.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analisis_trazado/mapa_trazado.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extraccion_limpieza/almacenar_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/Extraccion_limpieza/almacenar_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extraccion_limpieza/circuito.py" beforeDir="false" afterPath="$PROJECT_DIR$/Extraccion_limpieza/circuito.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extraccion_limpieza/condiciones_meteorologicas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Extraccion_limpieza/condiciones_meteorologicas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extraccion_limpieza/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Extraccion_limpieza/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extraccion_limpieza/sesion.py" beforeDir="false" afterPath="$PROJECT_DIR$/Extraccion_limpieza/sesion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extraccion_limpieza/telemetria.py" beforeDir="false" afterPath="$PROJECT_DIR$/Extraccion_limpieza/telemetria.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MEMORIA/references.bib" beforeDir="false" afterPath="$PROJECT_DIR$/MEMORIA/references.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_data/curvatura_interpolada.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv_data/curvatura_interpolada.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/barplot_uso_drs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/barplot_velocidad_maxima.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/boxplot_tiempo_por_compuesto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/boxplot_tiempos_por_equipo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/boxplot_tiempos_por_piloto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/boxplot_tiempos_sector.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/distribucion_marchas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/evolucion_meteorologia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/evolucion_ritmo_carrera.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/heatmap_correlacion_telemetria.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/heatmap_ritmo_piloto_vuelta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/histograma_velocidad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/mapa_trazado_curvas_numeradas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/mapa_trazado_dificultad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/perfil_acelerador_freno.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/perfil_velocidad_distancia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/scatter_degradacion_neumatico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/scatter_temperatura_vs_ritmo.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +48,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -49,34 +70,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "LaTeX.extraccion_limpieza.executor": "Run",
-    "LaTeX.main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.main.executor": "Run",
-    "Python.telemetria.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;BibTeX.main bibliography.executor&quot;: &quot;Run&quot;,
+    &quot;LaTeX.extraccion_limpieza.executor&quot;: &quot;Run&quot;,
+    &quot;LaTeX.main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.extraer_todas_vueltas.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.telemetria.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration default="true" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
-      <texify-bibtex>
-        <compiler />
-        <compiler-path />
-        <compiler-arguments />
-        <envs />
-        <main-file />
-        <aux-dir />
-        <latex-distribution>PROJECT_SDK</latex-distribution>
-      </texify-bibtex>
-      <method v="2" />
-    </configuration>
     <configuration name="main bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-bibtex>
         <compiler>BIBER</compiler>
@@ -87,7 +98,7 @@
           <env name="BSTINPUTS" value="$PROJECT_DIR$/MEMORIA;" />
         </envs>
         <main-file>$PROJECT_DIR$/MEMORIA/main.tex</main-file>
-        <aux-dir>$PROJECT_DIR$/out</aux-dir>
+        <aux-dir />
         <latex-distribution>TEXLIVE</latex-distribution>
       </texify-bibtex>
       <method v="2" />
@@ -105,7 +116,7 @@
         <before-run-command />
         <main-file>$PROJECT_DIR$/MEMORIA/main.tex</main-file>
         <output-path>$PROJECT_DIR$/out</output-path>
-        <auxil-path>{projectDir}/auxil</auxil-path>
+        <auxil-path>$PROJECT_DIR$/auxil</auxil-path>
         <working-directory>{mainFileParent}</working-directory>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
@@ -153,11 +164,92 @@
       <option name="project" value="LOCAL" />
       <updated>1786050986613</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="extraccion-limpieza done">
+      <option name="closed" value="true" />
+      <created>1786052361182</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1786052361182</updated>
+    </task>
+    <task id="LOCAL-00004" summary="extraccion-limpieza csv">
+      <option name="closed" value="true" />
+      <created>1786052453070</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1786052453070</updated>
+    </task>
+    <task id="LOCAL-00005" summary="analisis-trazado">
+      <option name="closed" value="true" />
+      <created>1786058349033</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1786058349033</updated>
+    </task>
+    <task id="LOCAL-00006" summary="analisis-exploratorio">
+      <option name="closed" value="true" />
+      <created>1786058375322</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1786058375322</updated>
+    </task>
+    <task id="LOCAL-00007" summary="analisis-exploratorio figuras">
+      <option name="closed" value="true" />
+      <created>1786058423702</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1786058423702</updated>
+    </task>
+    <task id="LOCAL-00008" summary="analisis-trazado figuras">
+      <option name="closed" value="true" />
+      <created>1786058445689</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1786058445689</updated>
+    </task>
+    <task id="LOCAL-00009" summary="analisis-trazado finalizado">
+      <option name="closed" value="true" />
+      <created>1787683018573</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1787683018573</updated>
+    </task>
+    <task id="LOCAL-00010" summary="cambios extraccion-limpieza">
+      <option name="closed" value="true" />
+      <created>1787683050490</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1787683050490</updated>
+    </task>
+    <task id="LOCAL-00011" summary="cambios analisis exploratorio">
+      <option name="closed" value="true" />
+      <created>1787683070041</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1787683070041</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="extraccion-limpieza done" />
+    <MESSAGE value="extraccion-limpieza csv" />
+    <MESSAGE value="analisis-trazado" />
+    <MESSAGE value="analisis-exploratorio" />
+    <MESSAGE value="analisis-exploratorio figuras" />
+    <MESSAGE value="analisis-trazado figuras" />
+    <MESSAGE value="analisis-trazado finalizado" />
+    <MESSAGE value="cambios extraccion-limpieza" />
+    <MESSAGE value="cambios analisis exploratorio" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambios analisis exploratorio" />
   </component>
 </project>

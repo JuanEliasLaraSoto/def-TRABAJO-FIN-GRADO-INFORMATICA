@@ -4,7 +4,11 @@ import os
 import pandas as pd
 
 from deteccion_curvas import detectar_curvas, clasificar_dificultad
-from mapa_trazado import plot_mapa_curvatura, plot_mapa_curvas_numeradas, plot_relacion_radio_velocidad
+from mapa_trazado import (
+    plot_mapa_curvatura,
+    plot_mapa_curvas_numeradas,
+    plot_relacion_radio_velocidad,
+)
 from perfil_velocidad_curvas import calcular_perfil_por_curva
 from validacion_multicircuito import CIRCUITOS, validar_circuito
 
@@ -28,8 +32,8 @@ DATA_DIR = "../csv_data"
 FIGURES_DIR = "../figures/analisis_trazado"
 TABLES_DIR = "../eda/analisis_trazado"
 MULTICIRCUITO_DATA_DIR = "../csv_data/multicircuito"
-MULTICIRCUITO_FIGURES_DIR = "../figures/multicircuito"
-MULTICIRCUITO_TABLES_DIR = "../csv_data/multicircuito"
+MULTICIRCUITO_FIGURES_DIR = "../figures/analisis_trazado/multicircuito"
+MULTICIRCUITO_TABLES_DIR = "../eda/analisis_trazado/multicircuito"
 
 
 def parse_args():

@@ -67,7 +67,7 @@ def plot_relacion_radio_velocidad(resumen, output_dir, r=None):
     path = os.path.join(output_dir, "relacion_radio_velocidad.png")
     plt.savefig(path, dpi=150)
     plt.close()
-    print(f"🗺️ {path}")
+    print(f"📊 {path}")
 
 
 def plot_mapa_curvatura(spline_track, output_dir, radio_clip=600.0, filename="mapa_trazado_dificultad.png", titulo=None):
@@ -105,7 +105,7 @@ def plot_mapa_curvatura(spline_track, output_dir, radio_clip=600.0, filename="ma
     path = os.path.join(output_dir, filename)
     plt.savefig(path, dpi=150)
     plt.close()
-    print(f"🗺️ {path}")
+    print(f"📊 {path}")
 
 
 def plot_mapa_curvas_numeradas(spline_track, curvas, output_dir, nombres=None):
@@ -153,7 +153,7 @@ def plot_mapa_curvas_numeradas(spline_track, curvas, output_dir, nombres=None):
                 nombre,
                 (curva["X_apex"], curva["Y_apex"]),
                 xytext=(xt, yt),
-                ha="center", va="center", fontsize=10,
+                ha="center", va="center", fontsize=15, fontweight="bold",
                 arrowprops=dict(arrowstyle="-", color="gray", lw=0.8),
                 zorder=2,
             )
@@ -170,4 +170,4 @@ def plot_mapa_curvas_numeradas(spline_track, curvas, output_dir, nombres=None):
     path = os.path.join(output_dir, "mapa_trazado_curvas_numeradas.png")
     plt.savefig(path, dpi=150)
     plt.close()
-    print(f"🗺️ {path}")
+    print(f"📊 {path}")

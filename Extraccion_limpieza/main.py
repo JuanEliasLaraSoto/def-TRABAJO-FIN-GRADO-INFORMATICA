@@ -142,24 +142,7 @@ def ejecutar_pipeline(args):
         print(
             f"✅ Geometría 2D reconstruida. Longitud estimada: {meta_track['track_length_m']:.2f} m")
 
-        # --------------------------------------------------------------------------
-        # C) SEGMENTACIÓN DE TRAMOS LENTOS (circuito.py)
-        # --------------------------------------------------------------------------
-        """
-        print("📊 Segmentando tramos lentos y chicanes del trazado...")
-        df_segments, df_track_curves = extraer_tramos_lentos(
-            df_interpolado=spline_track,
-            year=YEAR,
-            gp=GP,
-            session_type=SESSION,
-            output_dir=output_dir,
-        )
-        """
 
-    else:
-        print(
-            "🛑 Error: No se puede proceder a la regularización ni segmentación (telemetría ausente)."
-        )
     # 8) Almacenamiento y Persistencia de Artefactos de Control (Metadatos)
     info_path = os.path.join(output_dir, "circuit_info.txt")
     with open(info_path, "w", encoding="utf-8") as f:
@@ -241,7 +224,7 @@ def ejecutar_comparar_frecuencias(args):
     path = os.path.join(FIGURES_DIR, "comparativa_frecuencias_interpolacion.png")
     plt.savefig(path, dpi=150)
     plt.close()
-    print(f"grafica: {path}")
+    print(f"📊 {path}")
 
     print(tabla.to_string(index=False))
     print("Comparativa de frecuencias de interpolacion completada.")

@@ -2,9 +2,9 @@
 import fastf1
 import os
 
-
+"""
 def _desactivar_verificacion_ssl():
-    """
+    
     Algunos entornos (proxy/antivirus interceptando HTTPS) no validan el
     certificado al descargar sesiones aun no cacheadas, con lo que toda
     petición de red falla con SSLCertVerificationError incluso apuntando
@@ -13,7 +13,7 @@ def _desactivar_verificacion_ssl():
     se parchea Session.request para forzar verify=False. Uso deliberado y
     puntual (verificar_ssl=False en cargar_sesion): los datos descargados
     son públicos (telemetría de FastF1), sin credenciales de por medio.
-    """
+    
     import requests
     import urllib3
 
@@ -29,12 +29,12 @@ def _desactivar_verificacion_ssl():
     request_sin_verificar._ssl_verify_parcheado = True
     requests.Session.request = request_sin_verificar
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
+"""
 
 #se activa cache y se carga una sesion(importante realizar el load, poner en memoria)
 def cargar_sesion(year, gp, session_type, cache_dir=None, verificar_ssl=True):
-    if not verificar_ssl:
-        _desactivar_verificacion_ssl()
+    #if not verificar_ssl:
+    #    _desactivar_verificacion_ssl()
 
     if cache_dir is None:
         # Ruta relativa al propio módulo, no al cwd desde el que se ejecute el script

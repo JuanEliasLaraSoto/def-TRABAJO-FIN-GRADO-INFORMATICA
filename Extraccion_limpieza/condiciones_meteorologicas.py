@@ -1,4 +1,4 @@
-#condiciones.py
+#condiciones_meteorologicas.py
 #limpieza de las condiciones meteorologicas
 def limpiar_condiciones(w):
     """
